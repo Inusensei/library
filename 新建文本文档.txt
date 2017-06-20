@@ -1,0 +1,72 @@
+数据库：lib
+表：
+	图书信息表：tsxx
+		图书编号 t# int		主键
+		书名	 name char（50）
+		出版社	 cbs  varchar（100）
+		作者	 zz   char（50）
+		总数量	 num  int
+		可借数量 stock int
+		预约数   yuyue int
+		分类     fenlei char（20）
+	管理员列表：gly
+		管理员ID g# int		主键
+		密码	 pwd	password
+		姓名	name	char(20)
+		性别	sex	char(2)
+		联系电话 phone  varchar（11）
+	用户信息：yhxx
+		用户ID   id  int	
+		用户名   name char（20） 主键
+		密码     pwd password
+		联系电话 phone varchar（11）
+		
+	用户借阅信息：jyxx
+		用户名   nam char（20） 主键 
+		可借阅数 maxNum int
+		已借阅数 yijieNum int
+		超期数量 chaoqiNum int
+		//是否允许 quanxian bool
+	借书信息： bookread
+		借书用户名：sno     varchar(50) 表yhxx中name 外键
+		所借书号 ： bno     int		表tsxx中t# 	 外键
+		借书日期 ： sTime   char(20)	
+		还书日期 ： eTime   char(20)
+		借书状态 ： flag    int		1表示借出，0表示还回
+视图：
+	
+
+
+
+
+
+
+
+
+
+
+江湖多滔滔
+人间值一笑
+偶开天眼觑红尘
+世情多无聊
+
+
+快意妖氛一剑扫
+
+琴思古调
+酒论知交
+
+红颜从来易老
+侠者终须殉道
+
+
+
+
+
+傲笑天地间
+黑白两不分
+马车幽灵影
+潇洒一郎君
+
+
+
